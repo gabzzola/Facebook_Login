@@ -1,6 +1,6 @@
 import metaIcon from '../../assets/images/meta-icon.png';
-import LinkItemDesktop from '../../utils/LinkItemDesktop';
-import LinkItemMobile from '../../utils/LinkItemMobile';
+import LinkItemDesktop from './utils/LinkItemDesktop';
+import LinkItemMobile from './utils/LinkItemMobile';
 
 const languages = [
   "Português (Brasil)",
