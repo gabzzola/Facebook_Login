@@ -3,19 +3,19 @@ import { Link } from 'react-router-dom';
 const Form = () => (
   <form>
     <input
-      className="inputForm"
+      className="input-form"
       placeholder="Número do celular ou email"
       type="text"
     />
     
     <input
-      className="inputForm"
+      className="input-form"
       placeholder="Senha"
       type="password"
     />
 
     <button
-      className="btnDefault"
+      className="btn-default"
       type="submit"
     >
       Entrar

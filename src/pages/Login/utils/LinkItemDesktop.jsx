@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const LinkItemDesktop = ({ children }) => (
   <li>
-    <a className="footerDesktopLink" href="#">
+    <a className="footer-desktop-link" href="#">
       {children}
     </a>
   </li>

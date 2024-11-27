@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const LinkItemMobile = ({ children }) => (
   <li>
-    <a className="footerMobileLink" href="#">
+    <a className="footer-mobile-link" href="#">
       {children}
     </a>
   </li>

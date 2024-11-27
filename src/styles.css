@@ -6,18 +6,22 @@ body {
   @apply font-poppins bg-gradient-to-r from-pink-50 via-blue-50 to-blue-100;
 }
 
-.containerForm {
+.container-form {
   @apply md:bg-white md:border md:rounded-xl md:shadow-xl md:p-5 md:mb-10;
 }
 
-.inputForm {
+.input-form {
   @apply w-full text-base p-4 mb-3 border border-gray-300 rounded-xl placeholder-gray-main;
 }
 
-.footerMobileLink {
+.btn-default {
+  @apply w-full bg-blue-main text-white p-2 mb-5 border rounded-full;
+}
+
+.footer-mobile-link {
   @apply text-xs text-gray-main mx-2 hover:underline;
 }
 
-.footerDesktopLink {
-  @apply hidden footerMobileLink md:inline;
+.footer-desktop-link {
+  @apply hidden footer-mobile-link md:inline;
 }

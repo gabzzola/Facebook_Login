@@ -2,39 +2,39 @@ const Form = () => (
   <form>
     <div className="flex gap-4">
       <input 
-        className="inputForm"
+        className="input-form"
         placeholder="Nome"
         type="text"
       />
 
       <input 
-        className="inputForm"
+        className="input-form"
         placeholder="Sobrenome"
         type="text"
       />
     </div>
 
     <input 
-      className="inputForm"
+      className="input-form"
       placeholder="Email"
       type="text"
     />
 
     <div className="flex gap-4">
       <input 
-        className="inputForm"
+        className="input-form"
         placeholder="Senha"
         type="password"
       />
 
       <input 
-        className="inputForm"
+        className="input-form"
         placeholder="Confirme a senha"
         type="password"
       />
     </div>
 
-    <button className="btnDefault mt-4">
+    <button className="btn-default mt-4">
         Cadastre-se
     </button>
 
