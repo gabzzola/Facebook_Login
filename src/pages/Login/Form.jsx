@@ -1,18 +1,10 @@
 import { Link } from 'react-router-dom';
+import InputField from './../utils/InputField';
 
 const Form = () => (
   <form>
-    <input
-      className="input-form"
-      placeholder="Número do celular ou email"
-      type="text"
-    />
-    
-    <input
-      className="input-form"
-      placeholder="Senha"
-      type="password"
-    />
+    <InputField placeholder="Número do celular ou email" />
+    <InputField placeholder="Senha" type="password" />
 
     <button
       className="btn-default"
@@ -22,7 +14,7 @@ const Form = () => (
     </button>
 
     <a className="flex justify-center text-sm" href="#">
-        Esqueceu a senha?
+      Esqueceu a senha?
     </a>
 
     <Link to="/create-account">

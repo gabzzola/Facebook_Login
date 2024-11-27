@@ -1,46 +1,29 @@
+import { Link } from 'react-router-dom';
+import InputField from './../utils/InputField';
+
 const Form = () => (
   <form>
     <div className="flex gap-4">
-      <input 
-        className="input-form"
-        placeholder="Nome"
-        type="text"
-      />
-
-      <input 
-        className="input-form"
-        placeholder="Sobrenome"
-        type="text"
-      />
+      <InputField placeholder="Nome" />
+      <InputField placeholder="Sobrenome" />
     </div>
 
-    <input 
-      className="input-form"
-      placeholder="Email"
-      type="text"
-    />
+    <InputField placeholder="Email" />
 
     <div className="flex gap-4">
-      <input 
-        className="input-form"
-        placeholder="Senha"
-        type="password"
-      />
-
-      <input 
-        className="input-form"
-        placeholder="Confirme a senha"
-        type="password"
-      />
+      <InputField placeholder="Senha" type="password" />
+      <InputField placeholder="Confirme a senha" type="password" />
     </div>
 
     <button className="btn-default mt-4">
         Cadastre-se
     </button>
 
-    <p className="text-blue-main text-center">
-      <a href="#">Já possui uma conta?</a>
-    </p>
+    <Link to="/">
+      <p className="text-blue-main text-center">
+        <a href="#">Já possui uma conta?</a>
+      </p>
+    </Link>
   </form>
 );
 
