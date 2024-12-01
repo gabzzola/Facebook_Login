@@ -1,6 +1,5 @@
-import metaIcon from '../../assets/images/meta-icon.png';
-import LinkItemDesktop from './utils/LinkItemDesktop';
-import LinkItemMobile from './utils/LinkItemMobile';
+import LinkList from '../../components/Footer/LinkList';
+import metaIcon from './../../assets/images/meta-icon.png';
 
 const languages = [
   "Português (Brasil)",
@@ -49,31 +48,32 @@ const linksDesktop = [
 ];
 
 const Footer = () => (
-  <footer className="flex flex-col items-center mx-auto md:w-980px md:mt-[8vw]">
+  <footer className="fixed bottom-0 left-0 right-0 md:w-980px mx-auto">
     
-    <div className="flex flex-row my-4 md:hidden">
+    <div className="flex justify-center w-full md:hidden">
       <img className="w-5 h-5" src={metaIcon}/>
       <span className="text-gray-main font-semibold ml-1">
         Meta
       </span>
     </div>
 
-    <ul className="hidden md:flex md:flex-wrap md:mb-8">
-      {languages.map((language, index) => (
-        <LinkItemDesktop key={index}>
-          {language}
-        </LinkItemDesktop>
-      ))}
+    <ul className="hidden md:flex md:justify-center md:mb-6">
+      <LinkList 
+        links={languages}
+        className="footer-desktop-link"
+      />
     </ul>
 
-    <ul className="flex md:flex-wrap">
-      {linksDesktop.map((link, index) => (
-        <LinkItemDesktop key={index}>{link}</LinkItemDesktop>
-      ))}
+    <ul className="flex justify-center md:justify-start md:flex-wrap mb-4">
+      <LinkList 
+        links={linksDesktop}
+        className="footer-desktop-link"
+      />
       
-      {linksMobile.map((link, index) => (
-        <LinkItemMobile key={index}>{link}</LinkItemMobile>
-      ))}
+      <LinkList 
+        links={linksMobile}
+        className="footer-mobile-link"
+      />
     </ul>
   </footer>
 );

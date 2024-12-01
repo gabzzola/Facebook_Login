@@ -1,7 +1,7 @@
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
-import CreateAccount from './pages/CreateAccount';
+import Signup from './pages/Signup';
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
                       Cadastrar-se no Facebook
                     </title>
                   </Helmet>
-                  <CreateAccount />  
+                  <Signup />  
                 </>
               }
             />

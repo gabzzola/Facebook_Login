@@ -6,6 +6,10 @@ body {
   @apply font-poppins bg-gradient-to-r from-pink-50 via-blue-50 to-blue-100;
 }
 
+.logo-mobile {
+  @apply w-16 h-16 my-24 mx-auto md:hidden;
+}
+
 .container-form {
   @apply md:bg-white md:border md:rounded-xl md:shadow-xl md:p-5 md:mb-10;
 }
@@ -23,5 +27,5 @@ body {
 }
 
 .footer-desktop-link {
-  @apply hidden footer-mobile-link md:inline;
+  @apply footer-mobile-link hidden md:inline;
 }

@@ -1,6 +1,6 @@
-import Header from './Header.jsx';
+import Header from './../../components/Header/Header';
 import Aside from './Aside.jsx';
-import MainContent from './MainContent.jsx';
+import Form from './Form.jsx';
 import Footer from './Footer.jsx';
 
 function Login() {
@@ -8,9 +8,9 @@ function Login() {
     <>
       <Header />
       
-      <main className="grid grid-cols-1 md:grid-cols-2 mx-auto md:w-980px md:mt-[8vw]">
+      <main className="grid grid-cols-1 md:grid-cols-2 mx-auto md:w-980px md:mt-[10vw]">
         <Aside />
-        <MainContent />
+        <Form />
       </main>
 
       <Footer />

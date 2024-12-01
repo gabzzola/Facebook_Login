@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import InputField from './../utils/InputField';
+import InputField from './../../components/Input/InputField';
 
 const Form = () => (
   <form>
