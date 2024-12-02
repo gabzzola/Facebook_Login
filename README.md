@@ -1,8 +1,12 @@
-# React + Vite
+Tela de Login e Cadastro de usuário
+Este projeto é uma implementação básica de uma tela de login e cadastro com um design inspirado na interface do Facebook. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Funcionalidades
+Tela de login com campos de email/telefone e senha.
+Tela de cadastro com campos para nome, sobrenome, email, senha e confirmação de senha.
+Responsividade para dispositivos móveis.
+Backend básico em Node.js.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tecnologias Utilizadas
+Frontend: Vite + React, HTML5 e Tailwind.
+Backend: Node.js.
